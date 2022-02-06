@@ -1,4 +1,11 @@
-TRUNCATE TABLE teams;
+DROP TABLE IF EXISTS teams;
+
+CREATE TABLE teams(
+    teamId INT PRIMARY KEY,
+    teamName TEXT NOT NULL,
+    division TEXT,
+    record TEXT 
+);
 
 INSERT INTO teams (teamId, teamName, division, record) VALUES (1, 'Arizona Cardinals', '2nd NFC West','11 Wins 6 Losses');
 INSERT INTO teams (teamId, teamName, division, record) VALUES (2, 'Atlanta Falcons', '3rd NFC South', '7 Wins 10 Losses');

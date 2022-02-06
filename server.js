@@ -14,7 +14,7 @@ app.get("/", async (req, res) => {
                 <title>National Football League </title>
             </head>
             <body>
-                ${post.map(value => `<p><a href= "/teams/${value.teamid}"> ${value.teamname} : ${value.record} </p>`).join('')}
+                ${post.map(value => `<p><a href= "/teams/${value.teamid}"> ${value.teamname} </p>`).join('')}
             </body>
         </html>
     `
